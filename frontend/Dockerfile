@@ -7,7 +7,7 @@ COPY package-lock.json package-lock.json
 RUN npm install
 # RUN NODE_ENV=development npm i
 RUN npm install axios
-
+RUN npm i -s reactstrap bootstrap
 RUN NODE_ENV=development npm install --save react-bootstrap bootstrap@3
 RUN npx browserslist@latest --update-db
 
