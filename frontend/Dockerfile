@@ -5,10 +5,12 @@ COPY package.json package.json
 COPY package-lock.json package-lock.json
 
 # RUN npm install
-RUN NODE_ENV=development npm i
+# RUN NODE_ENV=development npm i
+
+RUN NODE_ENV=development npm install --save react-bootstrap bootstrap@3
+
 
 COPY . .
-RUN npx browserslist@latest --update-db
 RUN npm run build
 
 CMD ["npx", "-y", "http-server", "-p", "8000", "/app/build"]
