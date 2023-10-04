@@ -112,7 +112,7 @@ jobs:
       # Запускаем тесты
       run: |
 
-# закомичеваю  чтобы прошли тесты
+
         #cd frontend/
         #npm run test
   build_frontend_and_push_to_docker_hub:
