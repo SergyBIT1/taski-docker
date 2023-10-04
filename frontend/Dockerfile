@@ -8,7 +8,7 @@ COPY package-lock.json package-lock.json
 # RUN NODE_ENV=development npm i
 
 RUN NODE_ENV=development npm install --save react-bootstrap bootstrap@3
-npx browserslist@latest --update-db
+#npx browserslist@latest --update-db
 
 
 COPY . .
