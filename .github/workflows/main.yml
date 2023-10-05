@@ -132,7 +132,7 @@ jobs:
         with:
           context: ./frontend/
           push: true
-          tags: username/taski_frontend:latest
+          tags: sergyy1/taski_frontend:latest
 
 
 
