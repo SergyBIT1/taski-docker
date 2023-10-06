@@ -11,7 +11,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django')
 
 DEBUG = False
 
-ALLOWED_HOSTS = list[str] = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')
+ALLOWED_HOSTS: list[str] = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')
 
 
 # Application definition
